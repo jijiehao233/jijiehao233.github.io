@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" >
 
-<title>集结House</title>
+<title>test11 | 集结House</title>
 
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 
@@ -12,14 +12,21 @@
 <link rel="stylesheet" href="http://jijiehao233.github.io/styles/main.css">
 
 
+  
+    <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css" />
+  
+
+  
+
 
 <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 
 
 
-    <meta name="description" content="Talents Gathering">
-    
+    <meta name="description" content="11
+" />
+    <meta name="keywords" content="" />
   </head>
   <body>
     <div id="app" class="main">
@@ -89,42 +96,26 @@
 
       <div class="main-container">
         <div class="content-container" data-aos="fade-up">
-          
-            <article class="post-item">
-              <div class="left">
-                <a href="http://jijiehao233.github.io/post/test22/">
-                  <h2 class="post-title">test22</h2>
-                </a>
-                <div class="post-date">
-                  2021-02-01
-                </div>
-                <div class="post-abstract">
-                  
-                </div>
-              </div>
-              
-            </article>
-          
-            <article class="post-item">
-              <div class="left">
-                <a href="http://jijiehao233.github.io/post/test11/">
-                  <h2 class="post-title">test11</h2>
-                </a>
-                <div class="post-date">
-                  2021-02-01
-                </div>
-                <div class="post-abstract">
-                  
-                </div>
-              </div>
-              
-            </article>
-          
+          <div class="post-detail">
+            <h2 class="post-title">test11</h2>
+            <div class="post-date">2021-02-01</div>
+            
+            <div class="post-content" v-pre>
+              <p>11</p>
 
-          <div class="pagination-container">
-  
-  
-</div>
+            </div>
+            
+            
+
+            
+              
+                <div id="gitalk-container" data-aos="fade-in"></div>
+              
+
+              
+            
+
+          </div>
 
         </div>
       </div>
@@ -145,6 +136,29 @@ var app = new Vue({
 </script>
 
 
+
+
+
+  
+    <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+    <script>
+
+      var gitalk = new Gitalk({
+        clientID: '44c557f9b67309337e4d',
+        clientSecret: 'b6cd1b7f845f424d56185b0b8316e094c55a875e',
+        repo: 'jijiehao233.github.io',
+        owner: '🦎',
+        admin: ['🦎'],
+        id: (location.pathname).substring(0, 49),      // Ensure uniqueness and length less than 50
+        distractionFreeMode: false  // Facebook-like distraction free mode
+      })
+
+      gitalk.render('gitalk-container')
+
+    </script>
+  
+
+  
 
 
 
