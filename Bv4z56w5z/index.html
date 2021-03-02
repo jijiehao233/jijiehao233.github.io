@@ -5,7 +5,7 @@
 <meta name="description" content="" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>
-    博客介绍 | 集结House
+    SQL | 集结House
 </title>
 <link rel="shortcut icon" href="http://jijiehao233.github.io/favicon.ico?v=1614674839459">
 <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous"> -->
@@ -118,20 +118,69 @@
                 <div id="content" class="main-container-left">
                     <article class="post i-card">
                         <h2 class="post-title">
-                            博客介绍
+                            SQL
                         </h2>
                         <div class="post-info">
-                            <time class="post-time">2021-02-25</time>
+                            <time class="post-time">2021-03-02</time>
                             
                         </div>
                         
                                 <div class="post-content">
-                                    <center>写写记记，分享知识，督促自己，聚焦技术</center>
+                                    <p><em><strong>工具：sql server</strong></em></p>
+<h1 id="基本语法">基本语法</h1>
+<ol>
+<li>SQL对大小写不敏感；</li>
+<li>某些数据库系统要求在每条 SQL 语句的末端使用分号，分号是在数据库系统中分隔每条 SQL 语句的标准方法，这样就可以在对服务器的相同请求中执行一条以上的 SQL 语句</li>
+<li>注释
+<ul>
+<li>单行注释
+<ul>
+<li>句首使用 &quot;-- &quot;</li>
+</ul>
+</li>
+<li>多行注释:
+<ul>
+<li>使用/*... */</li>
+</ul>
+</li>
+</ul>
+</li>
+</ol>
+<!-- more -->
+<ol start="4">
+<li>SELECT 语句的执行顺序
+<ul>
+<li>from语句</li>
+<li>where语句(结合条件)</li>
+<li>start with语句</li>
+<li>connect by语句</li>
+<li>where语句</li>
+<li>group by语句</li>
+<li>having语句</li>
+<li>model语句</li>
+<li>select语句</li>
+<li>union、minus、intersect等集合演算演算</li>
+<li>order by语句</li>
+</ul>
+</li>
+</ol>
+<h1 id="语句">语句</h1>
+<h1 id="函数">函数</h1>
+<h1 id="数据类型">数据类型</h1>
 
                                 </div>
                     </article>
                     <!--  -->
                     
+                        <div class="next-post">
+                            <div class="next">下一篇</div>
+                            <a href="http://jijiehao233.github.io/CYea8UG_R/">
+                                <h3 class="post-title">
+                                    Uipath_RPA
+                                </h3>
+                            </a>
+                        </div>
+                        
                             <div id="disqus_thread"></div>
                             <div id="gitalk-container"></div>
                 </div>
@@ -140,35 +189,45 @@
                 <!-- right -->
                 <div id="sidebar" class="main-container-right">
                     
-                                <!-- id-card -->
-                                
-    <div class="id_card i-card">
-        <div class="id_card-avatar" style="background-image: url(http://jijiehao233.github.io/images/avatar.png?v=1614674839459)">
-        </div>
-        <h1 class="id_card-title">
-            集结House
-        </h1>
-        <h2 class="id_card-description">
-            Talents Gathering
-        </h2>
-        <!--  -->
-        <div class="id_card-sns">
-            <!-- github -->
-            
-                <a href="https://github.com/jijiehao233" target="_blank" rel="noopener noreferrer"><i
-                class="fa fa-github"></i></a>
-                
-                    <!-- twitter -->
-                    
-                            <!-- weibo -->
-                            
-                                    <!-- facebook -->
-                                    
+                        <!-- toc -->
+                        
+    <div class="toc-card i-card ">
+        <div class="toc-title i-card-title">目录</div>
+        <div class="toc-content">
+            <ul class="markdownIt-TOC">
+<li><a href="#%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95">基本语法</a></li>
+<li><a href="#%E8%AF%AD%E5%8F%A5">语句</a></li>
+<li><a href="#%E5%87%BD%E6%95%B0">函数</a></li>
+<li><a href="#%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B">数据类型</a></li>
+</ul>
 
         </div>
+        <script>
+            function locateCatelogList() {
+                /*获取文章目录集合,可通过:header过滤器*/
+                var alis = $('.post-content :header');
+                /*获取侧边栏目录列表集合**/
+                var sidebar_alis = $('.markdownIt-TOC a');
+                /*获取滚动条到顶部的距离*/
+                var scroll_height = $(window).scrollTop();
+                for (var i = 0; i < alis.length; i++) {
+                    /*获取锚点集合中的元素分别到顶点的距离*/
+                    var a_height = $(alis[i]).offset().top;
+                    if (a_height < scroll_height) {
+                        /*高亮显示*/
+                        sidebar_alis.removeClass('on');
+                        $(sidebar_alis[i]).addClass('on');
+                    }
+                }
+            }
+            $(function() {
+                /*绑定滚动事件 */
+                $(window).bind('scroll', locateCatelogList);
+            });
+        </script>
     </div>
     
-                                    
+                            
 
                 </div>
 

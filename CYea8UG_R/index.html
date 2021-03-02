@@ -5,7 +5,7 @@
 <meta name="description" content="" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>
-    博客介绍 | 集结House
+    Uipath_RPA | 集结House
 </title>
 <link rel="shortcut icon" href="http://jijiehao233.github.io/favicon.ico?v=1614674839459">
 <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous"> -->
@@ -118,20 +118,38 @@
                 <div id="content" class="main-container-left">
                     <article class="post i-card">
                         <h2 class="post-title">
-                            博客介绍
+                            Uipath_RPA
                         </h2>
                         <div class="post-info">
-                            <time class="post-time">2021-02-25</time>
+                            <time class="post-time">2021-03-01</time>
                             
                         </div>
                         
                                 <div class="post-content">
-                                    <center>写写记记，分享知识，督促自己，聚焦技术</center>
+                                    <h1 id="学习资源">学习资源</h1>
+<h2 id="学习网站">学习网站</h2>
+<p><a href="https://bbs.rpazj.com/forum-36-1.html">RPA之家</a><br>
+<a href="https://blog.everyxin.com/114.x">全网最详细RPA UIPATH 高级开发人员认证指南</a></p>
+<h1 id="uipath-studio">Uipath Studio</h1>
+<h2 id="properties属性">Properties属性</h2>
+<h2 id="activity运用案例">Activity运用案例</h2>
+<h3 id="look-up">look up</h3>
+<h1 id="uipath-robot">Uipath Robot</h1>
+<h1 id="uipath-orchestrator">Uipath Orchestrator</h1>
 
                                 </div>
                     </article>
                     <!--  -->
                     
+                        <div class="next-post">
+                            <div class="next">下一篇</div>
+                            <a href="http://jijiehao233.github.io/TDLcqVpEo/">
+                                <h3 class="post-title">
+                                    PS
+                                </h3>
+                            </a>
+                        </div>
+                        
                             <div id="disqus_thread"></div>
                             <div id="gitalk-container"></div>
                 </div>
@@ -140,35 +158,58 @@
                 <!-- right -->
                 <div id="sidebar" class="main-container-right">
                     
-                                <!-- id-card -->
-                                
-    <div class="id_card i-card">
-        <div class="id_card-avatar" style="background-image: url(http://jijiehao233.github.io/images/avatar.png?v=1614674839459)">
-        </div>
-        <h1 class="id_card-title">
-            集结House
-        </h1>
-        <h2 class="id_card-description">
-            Talents Gathering
-        </h2>
-        <!--  -->
-        <div class="id_card-sns">
-            <!-- github -->
-            
-                <a href="https://github.com/jijiehao233" target="_blank" rel="noopener noreferrer"><i
-                class="fa fa-github"></i></a>
-                
-                    <!-- twitter -->
-                    
-                            <!-- weibo -->
-                            
-                                    <!-- facebook -->
-                                    
+                        <!-- toc -->
+                        
+    <div class="toc-card i-card ">
+        <div class="toc-title i-card-title">目录</div>
+        <div class="toc-content">
+            <ul class="markdownIt-TOC">
+<li><a href="#%E5%AD%A6%E4%B9%A0%E8%B5%84%E6%BA%90">学习资源</a>
+<ul>
+<li><a href="#%E5%AD%A6%E4%B9%A0%E7%BD%91%E7%AB%99">学习网站</a></li>
+</ul>
+</li>
+<li><a href="#uipath-studio">Uipath Studio</a>
+<ul>
+<li><a href="#properties%E5%B1%9E%E6%80%A7">Properties属性</a></li>
+<li><a href="#activity%E8%BF%90%E7%94%A8%E6%A1%88%E4%BE%8B">Activity运用案例</a>
+<ul>
+<li><a href="#look-up">look up</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#uipath-robot">Uipath Robot</a></li>
+<li><a href="#uipath-orchestrator">Uipath Orchestrator</a></li>
+</ul>
 
         </div>
+        <script>
+            function locateCatelogList() {
+                /*获取文章目录集合,可通过:header过滤器*/
+                var alis = $('.post-content :header');
+                /*获取侧边栏目录列表集合**/
+                var sidebar_alis = $('.markdownIt-TOC a');
+                /*获取滚动条到顶部的距离*/
+                var scroll_height = $(window).scrollTop();
+                for (var i = 0; i < alis.length; i++) {
+                    /*获取锚点集合中的元素分别到顶点的距离*/
+                    var a_height = $(alis[i]).offset().top;
+                    if (a_height < scroll_height) {
+                        /*高亮显示*/
+                        sidebar_alis.removeClass('on');
+                        $(sidebar_alis[i]).addClass('on');
+                    }
+                }
+            }
+            $(function() {
+                /*绑定滚动事件 */
+                $(window).bind('scroll', locateCatelogList);
+            });
+        </script>
     </div>
     
-                                    
+                            
 
                 </div>
 
