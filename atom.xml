@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>http://jijiehao233.github.io</id>
     <title>集结House</title>
-    <updated>2021-03-02T08:49:35.863Z</updated>
+    <updated>2021-03-03T01:31:52.347Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="http://jijiehao233.github.io"/>
     <link rel="self" href="http://jijiehao233.github.io/atom.xml"/>
@@ -21,42 +21,32 @@
 <ol>
 <li>SQL对大小写不敏感；</li>
 <li>某些数据库系统要求在每条 SQL 语句的末端使用分号，分号是在数据库系统中分隔每条 SQL 语句的标准方法，这样就可以在对服务器的相同请求中执行一条以上的 SQL 语句</li>
-<li>注释
+<li>注释</li>
+</ol>
 <ul>
-<li>单行注释
-<ul>
+<li>单行注释</li>
 <li>句首使用 &quot;-- &quot;</li>
 </ul>
-</li>
-<li>多行注释:
 <ul>
+<li>多行注释:</li>
 <li>使用/*... */</li>
 </ul>
-</li>
-</ul>
-</li>
-</ol>
 ]]></summary>
         <content type="html"><![CDATA[<p><em><strong>工具：sql server</strong></em></p>
 <h1 id="基本语法">基本语法</h1>
 <ol>
 <li>SQL对大小写不敏感；</li>
 <li>某些数据库系统要求在每条 SQL 语句的末端使用分号，分号是在数据库系统中分隔每条 SQL 语句的标准方法，这样就可以在对服务器的相同请求中执行一条以上的 SQL 语句</li>
-<li>注释
+<li>注释</li>
+</ol>
 <ul>
-<li>单行注释
-<ul>
+<li>单行注释</li>
 <li>句首使用 &quot;-- &quot;</li>
 </ul>
-</li>
-<li>多行注释:
 <ul>
+<li>多行注释:</li>
 <li>使用/*... */</li>
 </ul>
-</li>
-</ul>
-</li>
-</ol>
 ]]></content>
     </entry>
     <entry>
