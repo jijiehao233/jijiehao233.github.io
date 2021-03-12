@@ -1,0 +1,547 @@
+<html>
+
+<head>
+    <meta charset="utf-8" />
+<meta name="description" content="" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>
+    SQL | 集结House
+</title>
+<link rel="shortcut icon" href="http://jijiehao233.github.io/favicon.ico?v=1615517110365">
+<!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous"> -->
+<link href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+<link rel="stylesheet" href="http://jijiehao233.github.io/styles/main.css">
+<!-- js -->
+<script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
+<script src="http://jijiehao233.github.io/media/js/jquery.sticky-sidebar.min.js"></script>
+<script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
+<script src="https://cdn.bootcss.com/moment.js/2.23.0/moment.min.js"></script>
+
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-188061993-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-188061993-1');
+    </script>
+    
+        
+            
+                <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+                <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+                
+
+                    
+                            
+</head>
+
+<body>
+    <div class="main">
+        <div class="header">
+    <div class="nav">
+        <div class="logo">
+            <a href="http://jijiehao233.github.io">
+                <img class="avatar" src="http://jijiehao233.github.io/images/avatar.png?v=1615517110365" alt="">
+            </a>
+            <div class="site-title">
+                <h1>
+                    集结House
+                </h1>
+            </div>
+        </div>
+        <span class="menu-btn fa fa-align-justify"></span>
+        <div class="menu-container">
+            <ul>
+                
+                    
+                            <li>
+                                <a href="http://jijiehao233.github.io" class="menu">
+                                    首页
+                                </a>
+                            </li>
+                            
+                                
+                    
+                            <li>
+                                <a href="http://jijiehao233.github.io/archives" class="menu">
+                                    归档
+                                </a>
+                            </li>
+                            
+                                
+                    
+                            <li>
+                                <a href="http://jijiehao233.github.io/tags" class="menu">
+                                    分类
+                                </a>
+                            </li>
+                            
+                                
+                    
+                            <li>
+                                <a href="http://jijiehao233.github.io/about" class="menu">
+                                    关于
+                                </a>
+                            </li>
+                            
+                                
+            </ul>
+        </div>
+    </div>
+</div>
+
+<script>
+    $(document).ready(function() {
+        $(".menu-btn").click(function() {
+            $(".menu-container").slideToggle();
+        });
+        $(window).resize(function() {
+
+            if (window.matchMedia('(min-width: 960px)').matches) {
+                $(".menu-container").css('display', 'block')
+            } else {
+                $(".menu-container").css('display', 'none')
+            }
+
+        });
+    });
+</script>
+
+            <div id="main-content" class="post-detail main-container">
+                <!-- left -->
+                <div id="content" class="main-container-left">
+                    <article class="post i-card">
+                        <h2 class="post-title">
+                            SQL
+                        </h2>
+                        <div class="post-info">
+                            <time class="post-time">2021-03-02</time>
+                            
+                                <a href="http://jijiehao233.github.io/Tech/" class="post-tag i-tag
+                            i-tag-success">
+                            #技术
+                        </a>
+                                
+                        </div>
+                        
+                            <div class="post-feature-image" style="background-image: url('http://jijiehao233.github.io/post-images/SQL.jpg')"></div>
+                            
+                                <div class="post-content">
+                                    <p><em><strong>工具：sql server</strong></em></p>
+<!-- more -->
+<!-- more -->
+<h1 id="参考链接">参考链接</h1>
+<p><em><strong>申明</strong></em> <em>：文章内容从网上摘取（参见学习链接），结合个人整理和输出，如有侵权，请联系删除~</em><br>
+<a href="https://www.runoob.com/sql/sql-tutorial.html"><font color="blue">菜鸟Runoob</font></a><br>
+<a href="https://www.w3cschool.cn/sql/"><font color="blue">W3cschool</font></a><br>
+<a href="https://docs.microsoft.com/zh-cn/previous-versions/sql/"><font color="blue">Microsoft SQL Server </font></a></p>
+<h1 id="基本语法">基本语法</h1>
+<ol>
+<li>SQL对大小写不敏感；</li>
+<li>某些数据库系统要求在每条 SQL 语句的末端使用分号，分号是在数据库系统中分隔每条 SQL 语句的标准方法，这样就可以在对服务器的相同请求中执行一条以上的 SQL 语句；</li>
+<li>注释<br>
+单行注释：句首使用 &quot;-- &quot;<br>
+多行注释：使用/*... */</li>
+<li>SELECT 语句的执行顺序<br>
+from语句 &gt; where语句(结合条件) &gt; start with语句 &gt; connect by语句 &gt; where语句 &gt; group by语句 &gt; having语句 &gt; model语句 &gt; select语句 &gt; union、minus、intersect等集合演算演算 &gt; order by语句</li>
+</ol>
+<h1 id="命令语句">命令语句</h1>
+<p>SELECT - 从数据库中提取数据<br>
+UPDATE - 更新数据库中的数据<br>
+DELETE - 从数据库中删除数据<br>
+INSERT INTO - 向数据库中插入新数据<br>
+CREATE DATABASE - 创建新数据库<br>
+ALTER DATABASE - 修改数据库</p>
+<p>ALTER TABLE - 变更（改变）数据库表<br>
+DROP TABLE - 删除表<br>
+CREATE INDEX - 创建索引（搜索键）<br>
+DROP INDEX - 删除索引</p>
+<h2 id="create创建">create创建</h2>
+<ol>
+<li>
+<p>创建数据库<br>
+CREATE DATABASE dbname;</p>
+</li>
+<li>
+<p>创建表格<br>
+CREATE TABLE table_name<br>
+(<br>
+column_name1 data_type(size) NOT NULL PRIMARY KEY,<br>
+column_name2 data_type(size) NOT NULL,<br>
+column_name3 data_type(size),<br>
+ALTER TABLE table_name ADD CONSTRAINT pk_命名 PRIMARY KEY (column_name1,column_name2)；<br>
+....<br>
+);</p>
+</li>
+</ol>
+<h2 id="insert插入">insert插入</h2>
+<ol>
+<li>
+<p>不指定列名<br>
+INSERT INTO table_name<br>
+VALUES (value1,value2,value3,...);</p>
+</li>
+<li>
+<p>制定列名<br>
+INSERT INTO table_name (column1,column2,column3,...)<br>
+VALUES<br>
+(value11,value21,value31,...);<br>
+(value12,value22,value33,...);</p>
+</li>
+</ol>
+<h2 id="alter">alter</h2>
+<ol>
+<li>添加列<br>
+ALTER TABLE table_name ADD column_name datatype</li>
+<li>将column_name1移动到column_name2后面<br>
+ALTER TABLE table_name MODIFY column_name1 datatype AFTER column_name2</li>
+</ol>
+<h2 id="join连接">join连接</h2>
+<figure data-type="image" tabindex="1"><img src="http://jijiehao233.github.io/post-images/1615172775892.png" alt="" loading="lazy"></figure>
+<ol>
+<li>语法<br>
+select * form t1  left join t2 on (t1. column_name = t2. column_name) where t2. column_name = '值'</li>
+<li>注意
+<ul>
+<li>条件on 和 where<br>
+on 条件是在生成临时表时使用的条件，它不管 on 中的条件是否为真，都会返回left或right表中 记录，另一边看是否满足on的条件；<br>
+where 条件是在临时表生成好后，再对临时表进行过滤的条件，这时已经没有 join 的含义了，条件不为真的就全部过滤掉；<br>
+left join,right join,full join的特殊性，不管on上的条件是否为真都会返回left或right表中的记录，full则具有left和right的特性的并集;<br>
+而inner jion没这个特殊性，则条件放在on中和where中，返回的结果集是相同的</li>
+</ul>
+</li>
+</ol>
+<h1 id="常用函数">常用函数</h1>
+<h1 id="数据类型">数据类型</h1>
+<h2 id="string类型">String类型</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">数据类型</th>
+<th style="text-align:left">描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">Bit</td>
+<td style="text-align:left">允许 0、1 或 Null</td>
+</tr>
+<tr>
+<td style="text-align:left">Character(N)</td>
+<td style="text-align:left">字符/字符串。固定长度 N</td>
+</tr>
+<tr>
+<td style="text-align:left">Nchar(N)</td>
+<td style="text-align:left">固定长度的 Unicode 字符串。最多 4,000 个字符</td>
+</tr>
+<tr>
+<td style="text-align:left">Ntext</td>
+<td style="text-align:left">可变长度的 Unicode 字符串。最多 2Gb 文本数据</td>
+</tr>
+<tr>
+<td style="text-align:left">Nvarchar</td>
+<td style="text-align:left">可变长度的 Unicode 字符串。最多 4,000 个字符</td>
+</tr>
+<tr>
+<td style="text-align:left">Nvarchar(Max)</td>
+<td style="text-align:left">可变长度的 Unicode 字符串。最多 536,870,912 个字符。</td>
+</tr>
+<tr>
+<td style="text-align:left">Text</td>
+<td style="text-align:left">可变长度的字符串。最多 2Gb 文本数据。</td>
+</tr>
+<tr>
+<td style="text-align:left">Varchar(N) 或character Varying(N)</td>
+<td style="text-align:left">字符/字符串。可变长度。最大长度 N</td>
+</tr>
+<tr>
+<td style="text-align:left">Ntext</td>
+<td style="text-align:left">可变长度的 Unicode 字符串。最多 2Gb 文本数据。</td>
+</tr>
+<tr>
+<td style="text-align:left">Image</td>
+<td style="text-align:left">可变长度的二进制字符串。最多 2Gb。</td>
+</tr>
+</tbody>
+</table>
+<h2 id="number-类型">Number 类型</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">数据类型</th>
+<th style="text-align:left">描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">Bigint</td>
+<td style="text-align:left">整数值（没有小数点）。精度 19</td>
+</tr>
+<tr>
+<td style="text-align:left">Decimal(P,S)</td>
+<td style="text-align:left">精确数值，精度 P，小数点后位数 S。例如：Decimal(5,2) 是一个小数点前有 3 位数，小数点后有 2 位数的数字</td>
+</tr>
+<tr>
+<td style="text-align:left">Double Precision</td>
+<td style="text-align:left">近似数值，尾数精度 16</td>
+</tr>
+<tr>
+<td style="text-align:left">Float(P)</td>
+<td style="text-align:left">近似数值，尾数精度 P。一个采用以 10 为基数的指数计数法的浮点数。该类型的 Size 参数由一个指定最小精度的单一数字组成</td>
+</tr>
+<tr>
+<td style="text-align:left">Integer(P)</td>
+<td style="text-align:left">整数值（没有小数点）。精度 P</td>
+</tr>
+<tr>
+<td style="text-align:left">Money</td>
+<td style="text-align:left">介于 -922,337,203,685,477.5808 与 922,337,203,685,477.5807 之间的货币数据</td>
+</tr>
+<tr>
+<td style="text-align:left">Numeric(P,S)</td>
+<td style="text-align:left">精确数值，精度 P，小数点后位数 S。（与 Decimal 相同）</td>
+</tr>
+<tr>
+<td style="text-align:left">Real</td>
+<td style="text-align:left">近似数值，尾数精度 7</td>
+</tr>
+<tr>
+<td style="text-align:left">Smallint</td>
+<td style="text-align:left">整数值（没有小数点）。精度 5</td>
+</tr>
+<tr>
+<td style="text-align:left">Smallmoney</td>
+<td style="text-align:left">介于 -214,748.3648 与 214,748.3647 之间的货币数据</td>
+</tr>
+<tr>
+<td style="text-align:left">Tinyint</td>
+<td style="text-align:left">允许从 0 到 255 的所有数字</td>
+</tr>
+</tbody>
+</table>
+<h2 id="date-类型">Date 类型</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">数据类型</th>
+<th style="text-align:left">描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">Date</td>
+<td style="text-align:left">存储年、月、日的值</td>
+</tr>
+<tr>
+<td style="text-align:left">Datetime</td>
+<td style="text-align:left">从 1753 年 1 月 1 日 到 9999 年 12 月 31 日，精度为 3.33 毫秒</td>
+</tr>
+<tr>
+<td style="text-align:left">Datetime2</td>
+<td style="text-align:left">从 1753 年 1 月 1 日 到 9999 年 12 月 31 日，精度为 100 纳秒</td>
+</tr>
+<tr>
+<td style="text-align:left">Datetimeoffset</td>
+<td style="text-align:left">与 Datetime2 相同，外加时区偏移</td>
+</tr>
+<tr>
+<td style="text-align:left">Interval</td>
+<td style="text-align:left">由一些整数字段组成，代表一段时间，取决于区间的类型</td>
+</tr>
+<tr>
+<td style="text-align:left">Smalldatetime</td>
+<td style="text-align:left">从 1900 年 1 月 1 日 到 2079 年 6 月 6 日，精度为 1 分钟</td>
+</tr>
+<tr>
+<td style="text-align:left">Time</td>
+<td style="text-align:left">存储小时、分、秒的值</td>
+</tr>
+<tr>
+<td style="text-align:left">Timestamp</td>
+<td style="text-align:left">存储年、月、日、小时、分、秒的值</td>
+</tr>
+</tbody>
+</table>
+<h2 id="其它类型">其它类型</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">数据类型</th>
+<th style="text-align:left">描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">Array</td>
+<td style="text-align:left">元素的固定长度的有序集合</td>
+</tr>
+<tr>
+<td style="text-align:left">Binary(N)</td>
+<td style="text-align:left">二进制串。固定长度 N</td>
+</tr>
+<tr>
+<td style="text-align:left">Boolean</td>
+<td style="text-align:left">存储 True 或 False 值</td>
+</tr>
+<tr>
+<td style="text-align:left">Cursor</td>
+<td style="text-align:left">存储对用于数据库操作的指针的引用</td>
+</tr>
+<tr>
+<td style="text-align:left">Multiset</td>
+<td style="text-align:left">元素的可变长度的无序集合</td>
+</tr>
+<tr>
+<td style="text-align:left">Sql_Variant</td>
+<td style="text-align:left">存储最多 8,000 字节不同数据类型的数据，除了 Text、Ntext 以及 Timestamp</td>
+</tr>
+<tr>
+<td style="text-align:left">Table</td>
+<td style="text-align:left">存储结果集，供稍后处理</td>
+</tr>
+<tr>
+<td style="text-align:left">Uniqueidentifier</td>
+<td style="text-align:left">存储全局唯一标识符 (Guid)</td>
+</tr>
+<tr>
+<td style="text-align:left">Varbinary(N) 或binary Varying(N)</td>
+<td style="text-align:left">二进制串。可变长度。最大长度 N</td>
+</tr>
+<tr>
+<td style="text-align:left">Xml</td>
+<td style="text-align:left">存储 Xml 数据</td>
+</tr>
+</tbody>
+</table>
+
+                                </div>
+                    </article>
+                    <!--  -->
+                    
+                        <div class="next-post">
+                            <div class="next">下一篇</div>
+                            <a href="http://jijiehao233.github.io/Uipath/">
+                                <h3 class="post-title">
+                                    Uipath_RPA
+                                </h3>
+                            </a>
+                        </div>
+                        
+                            <div id="disqus_thread"></div>
+                            <div id="gitalk-container"></div>
+                </div>
+                <!-- middle -->
+                <div class="main-container-middle"></div>
+                <!-- right -->
+                <div id="sidebar" class="main-container-right">
+                    
+                        <!-- toc -->
+                        
+    <div class="toc-card i-card ">
+        <div class="toc-title i-card-title">目录</div>
+        <div class="toc-content">
+            <ul class="markdownIt-TOC">
+<li><a href="#%E5%8F%82%E8%80%83%E9%93%BE%E6%8E%A5">参考链接</a></li>
+<li><a href="#%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95">基本语法</a></li>
+<li><a href="#%E5%91%BD%E4%BB%A4%E8%AF%AD%E5%8F%A5">命令语句</a>
+<ul>
+<li><a href="#create%E5%88%9B%E5%BB%BA">create创建</a></li>
+<li><a href="#insert%E6%8F%92%E5%85%A5">insert插入</a></li>
+<li><a href="#alter">alter</a></li>
+<li><a href="#join%E8%BF%9E%E6%8E%A5">join连接</a></li>
+</ul>
+</li>
+<li><a href="#%E5%B8%B8%E7%94%A8%E5%87%BD%E6%95%B0">常用函数</a></li>
+<li><a href="#%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B">数据类型</a>
+<ul>
+<li><a href="#string%E7%B1%BB%E5%9E%8B">String类型</a></li>
+<li><a href="#number-%E7%B1%BB%E5%9E%8B">Number 类型</a></li>
+<li><a href="#date-%E7%B1%BB%E5%9E%8B">Date 类型</a></li>
+<li><a href="#%E5%85%B6%E5%AE%83%E7%B1%BB%E5%9E%8B">其它类型</a></li>
+</ul>
+</li>
+</ul>
+
+        </div>
+        <script>
+            function locateCatelogList() {
+                /*获取文章目录集合,可通过:header过滤器*/
+                var alis = $('.post-content :header');
+                /*获取侧边栏目录列表集合**/
+                var sidebar_alis = $('.markdownIt-TOC a');
+                /*获取滚动条到顶部的距离*/
+                var scroll_height = $(window).scrollTop();
+                for (var i = 0; i < alis.length; i++) {
+                    /*获取锚点集合中的元素分别到顶点的距离*/
+                    var a_height = $(alis[i]).offset().top;
+                    if (a_height < scroll_height) {
+                        /*高亮显示*/
+                        sidebar_alis.removeClass('on');
+                        $(sidebar_alis[i]).addClass('on');
+                    }
+                }
+            }
+            $(function() {
+                /*绑定滚动事件 */
+                $(window).bind('scroll', locateCatelogList);
+            });
+        </script>
+    </div>
+    
+                            
+
+                </div>
+
+
+
+
+            </div>
+
+
+            <div class="site-footer">
+  做个理智且清晰的分享者 | 
+  <a class="rss" href="http://jijiehao233.github.io/atom.xml" target="_blank">RSS</a>
+</div>
+
+<script>
+  hljs.initHighlightingOnLoad()
+</script>
+
+
+    </div>
+    <script>
+        $('#sidebar').stickySidebar({
+            topSpacing: 80,
+            // bottomSpacing: 60
+        });
+    </script>
+    
+        
+            <script>
+    window.onload = function() {
+        var gitalk = new Gitalk({
+            clientID: '44c557f9b67309337e4d',
+            clientSecret: 'b6cd1b7f845f424d56185b0b8316e094c55a875e',
+            repo: 'jijiehao233.github.io',
+            owner: '🦎',
+            admin: ['🦎'],
+            id: (location.pathname).substring(0, 49), // Ensure uniqueness and length less than 50
+            distractionFreeMode: false // Facebook-like distraction free mode
+        })
+
+        gitalk.render('gitalk-container')
+    }
+</script>
+                
+
+                    
+                                
+</body>
+
+</html>
