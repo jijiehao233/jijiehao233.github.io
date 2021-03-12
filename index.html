@@ -1,218 +1,242 @@
-<html>
+<!DOCTYPE html>
+<html lang="zh-CN">
 
 <head>
-    <meta charset="utf-8" />
-<meta name="description" content="" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>
-    集结House
-</title>
-<link rel="shortcut icon" href="http://jijiehao233.github.io/favicon.ico?v=1615517110365">
-<!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous"> -->
-<link href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
-<link rel="stylesheet" href="http://jijiehao233.github.io/styles/main.css">
-<!-- js -->
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta content="yes" name="apple-mobile-web-app-capable" />
+<meta content="black" name="apple-mobile-web-app-status-bar-style" />
+<meta name="referrer" content="never">
+<meta name="keywords" content="">
+<meta name="description" content="欢迎访问[集结House]的个人博客">
+<meta name="author" content="kveln">
+<title>集结House</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.0/dist/css/bootstrap.min.css">
+<link href="https://cdn.bootcss.com/font-awesome/5.11.2/css/all.min.css" rel="stylesheet">
+<link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+<link
+  href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800'
+  rel='stylesheet' type='text/css'>
+<link rel="alternate" type="application/rss+xml" title="集结House » Feed"
+  href="http://jijiehao233.github.io/atom.xml">
+<link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.15.10/build/styles/androidstudio.min.css">
+<link href="http://jijiehao233.github.io/styles/main.css" rel="stylesheet">
 <script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
-<script src="http://jijiehao233.github.io/media/js/jquery.sticky-sidebar.min.js"></script>
-<script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
-<script src="https://cdn.bootcss.com/moment.js/2.23.0/moment.min.js"></script>
 
+<script src="https://cdn.jsdelivr.net/npm/@highlightjs/cdn-assets/highlight.min.js"></script>
 
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-188061993-1"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/850552586/ericamcdn@0.1/css/live2d.css">
 
-        function gtag() {
-            dataLayer.push(arguments);
-        }
-        gtag('js', new Date());
+<script>hljs.initHighlightingOnLoad();</script>
 
-        gtag('config', 'UA-188061993-1');
-    </script>
-    
 </head>
 
 <body>
-    <div class="main">
-        <div class="header">
-    <div class="nav">
-        <div class="logo">
-            <a href="http://jijiehao233.github.io">
-                <img class="avatar" src="http://jijiehao233.github.io/images/avatar.png?v=1615517110365" alt="">
-            </a>
-            <div class="site-title">
-                <h1>
-                    集结House
-                </h1>
-            </div>
-        </div>
-        <span class="menu-btn fa fa-align-justify"></span>
-        <div class="menu-container">
-            <ul>
-                
-                    
-                            <li>
-                                <a href="http://jijiehao233.github.io" class="menu">
-                                    首页
-                                </a>
-                            </li>
-                            
-                                
-                    
-                            <li>
-                                <a href="http://jijiehao233.github.io/archives" class="menu">
-                                    归档
-                                </a>
-                            </li>
-                            
-                                
-                    
-                            <li>
-                                <a href="http://jijiehao233.github.io/tags" class="menu">
-                                    分类
-                                </a>
-                            </li>
-                            
-                                
-                    
-                            <li>
-                                <a href="http://jijiehao233.github.io/about" class="menu">
-                                    关于
-                                </a>
-                            </li>
-                            
-                                
-            </ul>
-        </div>
-    </div>
-</div>
-
-<script>
-    $(document).ready(function() {
-        $(".menu-btn").click(function() {
-            $(".menu-container").slideToggle();
-        });
-        $(window).resize(function() {
-
-            if (window.matchMedia('(min-width: 960px)').matches) {
-                $(".menu-container").css('display', 'block')
-            } else {
-                $(".menu-container").css('display', 'none')
-            }
-
-        });
-    });
-</script>
-
-            <div id="main-content" class="post-container main-container">
-                <div id="content" class="main-container-left">
-                    
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+  <div class="container">
+    <a class="navbar-brand" href="http://jijiehao233.github.io">集结House</a>
+    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
+      data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
+      aria-label="Toggle navigation">
+      Menu
+      <i class="fas fa-bars"></i>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+      <ul class="navbar-nav ml-auto">
         
-            <article class="post i-card">
-                <h2 class="post-title">
-                    <a href="http://jijiehao233.github.io/FbC4H45Nj/">
-                        OCR
-                    </a>
-                </h2>
-                <div class="post-info">
-                    <time class="post-time">2021-03-12</time>
-                    
-                </div>
-                <div class="post-article">
-                    
-                            <div class="post-content">
-                                
-                                        <div class="post-content-content">
-                                            待续...
-
-                                        </div>
-                                        
-                                            <a class="btn btn-text" href="http://jijiehao233.github.io/FbC4H45Nj/">Read More ~</a>
-                            </div>
-                </div>
-            </article>
+        <li class="nav-item">
+          
+          <a class="nav-link" href="http://jijiehao233.github.io">首页</a>
+          
+        </li>
+        
+        <li class="nav-item">
+          
+          <a class="nav-link" href="http://jijiehao233.github.io/archives">归档</a>
+          
+        </li>
+        
+        <li class="nav-item">
+          
+          <a class="nav-link" href="http://jijiehao233.github.io/tags">分类</a>
+          
+        </li>
+        
+        <li class="nav-item">
+          
+          <a class="nav-link" href="http://jijiehao233.github.io/about">关于</a>
+          
+        </li>
+        
+        <li class="nav-item">
+          <div class="gridea-search-container">
+            <form id="gridea-search-form" style="position: relative" data-update="1615517723230"
+              action="/search/index.html">
+              <input class="search-input" autocomplete="off" spellcheck="false" name="q" placeholder="搜索文章" />
+              <i class="fas fa-search gt-c-content-color-first" style="position: absolute; top: 9px; left: 10px;"></i>
+            </form>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<header class="masthead" style="background-image: url('http://jijiehao233.github.io/media/images/home-bg.jpg')">
+  <div class="overlay"></div>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-md-10 mx-auto">
+        
+          <!-- 首页Header -->
+          <div class="site-heading">
+            <img class="user-avatar" src="/images/avatar.png" alt="头像">
+            <h1>集结House</h1>
+            <span class="subheading">Talents Gathering</span>
+          </div>
+        
+      </div>
+    </div>
+  </div>
+</header>
+  <div class="container">
+  <div class="row">
+    <div class="col-lg-8 col-md-10 mx-auto">
+      
+      <!-- 每行的总容器 -->
+      <div class="post-row-container">
+        <!-- 第0层；标题 -->
+        <div class="title-floor">
+          <div class="post-title-container">
             
-            <article class="post i-card">
-                <h2 class="post-title">
-                    <a href="http://jijiehao233.github.io/OPW0_4buL/">
-                        NLP
-                    </a>
-                </h2>
-                <div class="post-info">
-                    <time class="post-time">2021-03-12</time>
-                    
-                </div>
-                <div class="post-article">
-                    
-                            <div class="post-content">
-                                
-                                        <div class="post-content-content">
-                                            NLP
-
-                                        </div>
-                                        
-                                            <a class="btn btn-text" href="http://jijiehao233.github.io/OPW0_4buL/">Read More ~</a>
-                            </div>
-                </div>
-            </article>
+            <a href="http://jijiehao233.github.io/FbC4H45Nj/">
+              <h2 class="post-title">
+                OCR
+              </h2>
+            </a>
+          </div>
+        </div>
+        <!-- 第一层：包含文章描述、时间信息、封面图 -->
+        <div class="post-row-first-floor">
+          <div class="post-preview">
+            <h3 class="post-subtitle">
+              
+            </h3>
+            <p class="post-meta">
+              <span class="time">2021-03-12</span>
+              <span>,</span>
+              <span class="post-stats">1 min read</span>
+            </p>
+          </div>
+          
+        </div>
+        <!-- 第二层：下划线、占位标签、tags -->
+        <div class="post-row-sec-floor">
+          <hr>
+          <div class="clearfix"></div>
+          
+        </div>
+      </div>
+      </>
+      
+      <!-- 每行的总容器 -->
+      <div class="post-row-container">
+        <!-- 第0层；标题 -->
+        <div class="title-floor">
+          <div class="post-title-container">
             
-            <article class="post i-card">
-                <h2 class="post-title">
-                    <a href="http://jijiehao233.github.io/SQL/">
-                        SQL
-                    </a>
-                </h2>
-                <div class="post-info">
-                    <time class="post-time">2021-03-02</time>
-                    
-                        <a href="http://jijiehao233.github.io/Tech/" class="post-tag i-tag
-                            i-tag-info">
-            #技术
-        </a>
-                        
-                </div>
-                <div class="post-article">
-                    
-                        <a href="http://jijiehao233.github.io/SQL/" class="post-feature-image" style="background-image:url(http://jijiehao233.github.io/post-images/SQL.jpg) ">
-                        </a>
-                        
-                            <div class="post-content">
-                                
-                                    <div class="post-content-abstract">
-                                        <p><em><strong>工具：sql server</strong></em></p>
-
-                                    </div>
-                                    
-                                            <a class="btn btn-text" href="http://jijiehao233.github.io/SQL/">Read More ~</a>
-                            </div>
-                </div>
-            </article>
+            <a href="http://jijiehao233.github.io/OPW0_4buL/">
+              <h2 class="post-title">
+                NLP
+              </h2>
+            </a>
+          </div>
+        </div>
+        <!-- 第一层：包含文章描述、时间信息、封面图 -->
+        <div class="post-row-first-floor">
+          <div class="post-preview">
+            <h3 class="post-subtitle">
+              
+            </h3>
+            <p class="post-meta">
+              <span class="time">2021-03-12</span>
+              <span>,</span>
+              <span class="post-stats">1 min read</span>
+            </p>
+          </div>
+          
+        </div>
+        <!-- 第二层：下划线、占位标签、tags -->
+        <div class="post-row-sec-floor">
+          <hr>
+          <div class="clearfix"></div>
+          
+        </div>
+      </div>
+      </>
+      
+      <!-- 每行的总容器 -->
+      <div class="post-row-container">
+        <!-- 第0层；标题 -->
+        <div class="title-floor">
+          <div class="post-title-container">
             
-            <article class="post i-card">
-                <h2 class="post-title">
-                    <a href="http://jijiehao233.github.io/Uipath/">
-                        Uipath_RPA
-                    </a>
-                </h2>
-                <div class="post-info">
-                    <time class="post-time">2021-03-01</time>
-                    
-                        <a href="http://jijiehao233.github.io/Tech/" class="post-tag i-tag
-                            i-tag-warning">
-            #技术
-        </a>
-                        
-                </div>
-                <div class="post-article">
-                    
-                        <a href="http://jijiehao233.github.io/Uipath/" class="post-feature-image" style="background-image:url(http://jijiehao233.github.io/post-images/Uipath.jfif) ">
-                        </a>
-                        
-                            <div class="post-content">
-                                
-                                    <div class="post-content-abstract">
-                                        <h1 id="学习资源">学习资源</h1>
+            <a href="http://jijiehao233.github.io/SQL/">
+              <h2 class="post-title">
+                SQL
+              </h2>
+            </a>
+          </div>
+        </div>
+        <!-- 第一层：包含文章描述、时间信息、封面图 -->
+        <div class="post-row-first-floor">
+          <div class="post-preview">
+            <h3 class="post-subtitle">
+              <p><em><strong>工具：sql server</strong></em></p>
+
+            </h3>
+            <p class="post-meta">
+              <span class="time">2021-03-02</span>
+              <span>,</span>
+              <span class="post-stats">6 min read</span>
+            </p>
+          </div>
+          
+          <a href="http://jijiehao233.github.io/SQL/" class="post-feature-image" style="background-image: url('http://jijiehao233.github.io/post-images/SQL.jpg')">
+          </a>
+          
+        </div>
+        <!-- 第二层：下划线、占位标签、tags -->
+        <div class="post-row-sec-floor">
+          <hr>
+          <div class="clearfix"></div>
+          
+          <a href="http://jijiehao233.github.io/Tech/" class="post-tag">
+            技术
+          </a>
+          
+        </div>
+      </div>
+      </>
+      
+      <!-- 每行的总容器 -->
+      <div class="post-row-container">
+        <!-- 第0层；标题 -->
+        <div class="title-floor">
+          <div class="post-title-container">
+            
+            <a href="http://jijiehao233.github.io/Uipath/">
+              <h2 class="post-title">
+                Uipath_RPA
+              </h2>
+            </a>
+          </div>
+        </div>
+        <!-- 第一层：包含文章描述、时间信息、封面图 -->
+        <div class="post-row-first-floor">
+          <div class="post-preview">
+            <h3 class="post-subtitle">
+              <h1 id="学习资源">学习资源</h1>
 <p><a href="https://academy.uipath.com/learn" title="官方学院"><font color = "DodgerBlue">Uipath Academy</font></a><br>
 <a href="https://www.jianshu.com/c/938e6c0d92ed"><font color = "DodgerBlue">UiPath Studio 中文文档</font></a><br>
 <a href="https://bbs.rpazj.com/forum-36-1.html"><font color = "DodgerBlue">RPA之家</font></a><br>
@@ -221,296 +245,200 @@
 <a href="https://home.cnblogs.com/u/toseeme/"><font color = "DodgerBlue">半个读书人</font></a><br>
 <a href="https://blog.csdn.net/chaijw"><font color = "DodgerBlue">柴班说</font></a></p>
 
-                                    </div>
-                                    
-                                            <a class="btn btn-text" href="http://jijiehao233.github.io/Uipath/">Read More ~</a>
-                            </div>
-                </div>
-            </article>
-            
-            <article class="post i-card">
-                <h2 class="post-title">
-                    <a href="http://jijiehao233.github.io/TDLcqVpEo/">
-                        PS
-                    </a>
-                </h2>
-                <div class="post-info">
-                    <time class="post-time">2021-02-26</time>
-                    
-                </div>
-                <div class="post-article">
-                    
-                            <div class="post-content">
-                                
-                                        <div class="post-content-content">
-                                            PS
-一、	应用范围
-
-
-手绘
-
-
-平面设计
-
-
-网页/APP设计
-
-
-照片处理
-二、	基础概念
-
-
-图像概念
-
-
-
-像素
-像素又称栅格，在PS中，是组成图像的基本单元，每个像素都有不同的颜色值，单位面积的像素越多，分辨率（ppi）越高，图像的效果越好。
-
-一般对于打印分辨率，印刷行业有一个标准：300dpi。就是指用来印刷的图像分辨率，至少要为300dpi 才可以，低于这个数值印刷出来的图像不够清晰。
-如果打印或者喷绘，只需要72dpi 就可以了。
-
-矢量图 VS 位图
-位图 VS 矢量（向量）图；
-	基本特征：
-矢量图根据几何特性绘制图像，是用线段或者曲线描述图像，可以是一个点或者一条线，只能靠软件生成，占用内在空间小，因为这种类型的图像包含独立的分离图像，可以自由无限制的重新组合。
-位图图像也称为点阵图像，位图使用我们称为像素的一格一格的小点来描述图像。
-
-	最大区别：
-矢量图形与分辨率无关，可以将它缩放到任意大小和以任意分辨率在输出设备上打印出来，都不会影响清晰度，而位图是由一个一个像素点产生，当放大图像时，像素点也放大了，但每个像素点表示的颜色是单一的，所以在位图放大后就会出现咱们平时所见到的马赛克状。
-	色彩：
-位图表现的色彩比较丰富，可以表现出色彩丰富的图象，可逼真表现自然界各类实物；而矢量图形色彩不丰富，无法表现逼真的实物，矢量图常常用来表示标识、图标、Logo等简单直接的图像。
-	文件类型：
-位图的文件类型很多，如*.bmp、.pcx、.gif、.jpg、.tif、photoshop的*.psd等；
-矢量图形格式也很多，如AdobeIllustrator的*.AI、.EPS和SVG、AutoCAD的.dwg和dxf、Corel DRAW的*.cdr等。
-	空间大小：
-由于位图表现的色彩比较丰富，所以占用的空间会很大，颜色信息越多，占用空间越大，图像越清晰，占用空间越大；由于矢量图形表现的图像颜色比较单一，所以所占用的空间会很小。
-	相互转化：
-经过软件矢量图可以很轻松的转化为位图，而位图要想转换为矢量图必须经过复杂而庞大的数据处理，而且生成的矢量图质量也会有很大的出入。
-	像素选择：
-位图质量是由分辨率决定，如果不用打印，通常用72分辨率就可以；如果用于彩色打印，则需要300分辨率左右。
-矢量图不论放大多少倍，都保证清晰。
-3)	像素、路径、形状
-
-色彩
-	颜色模式：
-
-图一：
-光学三原色：RGB（red, green, blue），主要用于电脑显示。
-图二：
-色彩三原色：CMYK（cyan青，magenta品红，yellow黄，black黑），主要用于打印，是印刷品唯一的色彩模式。
-区别：
-	RGB色彩模式是发光的，存在于屏幕等显示设备中。不存在于印刷品中。CMYK色彩模式是反光的，需要外界辅助光源才能被感知，它是印刷品唯一的色彩模式。
-	色彩数量上RGB色域的颜色数比CMYK多出许多。但两者各有部分色彩是互相独立(即不可转换)的。
-	RGB通道灰度图中偏白表示发光程度高；CMYK通道灰度图中偏白表示油墨含量低。反而反之。
-	虽然理论上RGB与CMYK的互转都会损失一些颜色，不过从CMYK转RGB时损失的颜色较少，在视觉上有时很难看出区别。而从RGB转CMYK颜色将损失较多，视觉大部分都可以明显分辨出来。因此习惯上也有CMYK转RGB时颜色无损的说法，其实这种说法的真正所指是：宁可CMYK转RGB，不可RGB转CMYK。
-美术色彩原料三原色：红黄蓝
-	色彩三属性：色相，明度，纯度
-色相（VS彩度）：色光由于光波长、频率的不同而形成的特定性质，红橙黄绿青蓝紫等主要色相
-明度（VS亮度/ VS 色阶）：物体反射出来的光波数量的多少，决定了颜色的深浅程度。
-色阶是表示图像亮度强弱的指数标准，也就是我们说的色彩指数，在数字图像处理教程中，指的是灰度分辨率（又称为灰度级分辨率或者幅度分辨率）。图像的色彩丰满度和精细度是由色阶决定的。色阶指亮度，和颜色无关，但最亮的只有白色，最不亮的只有黑色
-纯度（饱和度）：物体反射光波频率的纯净程度，指色彩的鲜艳程度，等于彩度除以明度。
-明度是控制深浅，饱和度是控制灰白。
-	黑场就是画面中黑的地方为 R\G\B 0\0\0
-白场就是画面中白的地方R\G\B为 255\255\255
-灰场就是画面中的中灰值R\G\B为 128\128\128
-灰场=曝光度的“灰色系数校正”
-
-通道
-在不同的图像模式下，通道是不一样的。通道层中的像素颜色是由一组原色的亮度值组成的，通道实际上可以理解为是选择区域的映射。
-
-图像的颜色模式决定了为图像创建颜色通道的数目：
-　
-　　1.位图模式仅有一个通道，通道中有黑色和白色2个色阶　
-　　2.灰度模式的图像有一个通道，该通道表现的是从黑色到白色的256个色阶的变化　
-　　3.RGB模式的图像有4个通道，1个复合通道(RGB通道)，3个分别代表红色、绿色、蓝色的通道。　
-　　4.CMYK模式的图像由5个通道组成：一个复合通道(CMYK通道)，4个分别代表青色、洋红、黄色和黑色的通道　
-5.LAB模式的图像有4个通道：1个复合通道(LAB通道)，1个明度分量通道，两个色度分量通道
-RGB通道灰度图中较白表示亮度较高，较黑表示亮度较低。纯白表示亮度最高，纯黑表示亮度为零。
-CMYK通道灰度图中较白表示油墨含量较低，较黑表示油墨含量较高，纯白表示完全没有油墨。纯黑表示油墨浓度最高。
-通道的主要功能：　
-　　1.存储图像的色彩资料　
-　　2.存储和创建选区　
-　　3.抠图
-6)	选区
-
-
-画板
-
-
-蒙版
-蒙版就是控制所选图层的显示与隐藏。
-黑色是用来隐藏，白色是用来显示(我们可以用画笔工具涂黑涂白来隐藏或显示）。
-图层类蒙版	
-	剪贴蒙版
-将要显示放在上面一层，要切除形状效果的放在下面一层。
-
-
-	调整图层
-操作：
-1）点击图层
-2）选定一定的选区
-3）点击底部的一个半黑半百的圆圈图标，选择其中的调整目标，例如是饱和度、色阶、曲线等等
-4）选择之后会在图层上面形成一个调整的图层
-可以在调整图层上调整曲线、色阶之类的，它会直接作用到底部的图层，如果不想要这个调整结果，可以点击右边的眼睛图标不让其显色。
-用途：
-主要是通过调整层进行调整图片，而且专项专攻，不对原有图层直接调整，避免撤退操作，也就是不用备份，哪一步错了，直接改哪一步就好了。
-	快速蒙版
-使用步骤：
-1）点击图层
-2）按键盘的Q键，即进入快速蒙版
-3）进入快速蒙版，可以使用画笔涂抹：
-——使用黑色涂抹会呈现红色，即不被选择的区域
-——使用灰色涂抹会呈现浅一点的红色，即被羽化选择，如果再填充颜色会发现呈现透明效果的
-——如果用白色涂抹，这是被选择的区域，即蒙版不会有颜色出现（即没有任何红色）
-4）在按一次键盘的Q键，即退出快速蒙版
-5）Ctrl+J将选取复制到新图层
-用途：
-主要是用于获得一定的选区，本身是不会对原图层有什么变化。
-我们可以通过复制选区形成新的图层进行再操作。
-通道类蒙版（主要：图层蒙版）
-通道类蒙版：简单地说就是一个通道，准确地讲，就是通道中的灰度图。
-图层蒙版是通道类蒙板的典型应用，其目的在于控制某一图层的显隐。
-当我们为某一图层增加图层蒙版后，会在相应图层的后面增加一个标识，但这个标识并不是图层蒙版本身，真正的图层蒙版其实是一个通道，是通道中的一幅灰度图。
-使用步骤：
-1）选择好图层
-2）点击底部的，类似照相机的图标
-这样就可以在图层的旁边出现了图层蒙版
-3）在点击蒙版，在里面如下操作会得到相应的结果
-——涂黑色，作用到图层会看不见
-——涂白色，作用到图层是可见
-——涂黑色和白色之间的灰色，则会呈现半透明的效果，颜色越深透明度越高
-4）图层和蒙版直接有一个链接的符号：
-——点击取消链接的，就可以单独移动图层里的图片或蒙版
-——再次点击会出现链接，这样图层和蒙版是一起移动的
-链接就是类似锁定的功能。
-用途：
-图层蒙版主要就是用于获取图层的显示范围，设置渐变、朦胧显示或倒影，再结合一些滤镜，可以生产很多不同的特效果。
-路径类蒙版（唯一：矢量蒙版）
-路径类蒙板实质上就是一条路径。矢量蒙板是该类蒙板唯一的应用。
-矢量蒙板是用路径来控制目标图层的显隐的。封闭区域内对应的目标图层将被显示，封闭区域外对应的目标图层将被隐藏。对于一些复杂交叉的路径，可参照奇偶缠绕的规则判断某一区域是否属于被封闭的区域。
-与通道类蒙板类似，当我们为某一图层增加矢量蒙板后，在相应图层的后面也会增加一个矢量蒙板标识符，但这并不是矢量蒙板本身，要想查看真正的矢量蒙板，需在路径调板中方可。
-使用步骤：
-1）点击图层
-2）按住ctrl不放，在点击下边的 类似 照相机似的图标
-3）这样就创建了矢量蒙版，表面看上去跟图层蒙版很像
-用途：
-主要是用于创建一定形状的边缘清晰的图形，我们可以在里面使用钢笔、形状等进行绘制和调整路径。
-在矢量蒙版里，可以看到，选择路径范围后，会在蒙版中直接添加白色，其他地方会自动填充为黑色。
-限制：
-1）不能在矢量蒙版里涂抹、填充、橡皮擦之类添加颜色或减除颜色的操作；
-2）也不能在矢量蒙版使用T图标进行插入文字
-9)	特殊快捷键
-可自定义快捷键，比如：Ctrl+Z
-	快速新建选区图层               Ctrl+J
-	选中图片的放大缩小，自由变换：先Ctrl+t选中，再鼠标拉动边框进行放大缩小（按住shift可等比例缩放）
-	变换选区：                     Alt+S+T
-	取消选区                       Ctrl+D  或 Enter
-	将绘制的路径生成选区           Ctrl+Enter
-	反选                           Ctrl+Shift+I
-	放大缩小                       Ctrl+、Ctrl-或者Atl+鼠标滚动
-	去色：                         Ctrl+Shift+U
-	合并可见图层：                 Ctrl+Shift+E
-	创建蒙版：直接点击图标是白色的，先按住Alt键再点击即创建黑色蒙版
-	蒙版黑白转换：                 Ctrl+I
-	添加矢量蒙版：                 Ctrl+蒙版图标
-	羽化：                         Shift+F6
-	填充前景色：                   Alt+双击Delete
-	填充背景色：                   Ctrl+Delete
-	图层选作选区：按住Ctrl键，鼠标左键点击图层面板图标处
-	反选边缘，羽化半径后，按Delete键，可多按几次，加深羽化
-	调出颜色色板                   F6
-	选中						   Ctrl+鼠标单击
-	移动复制选区				   Ctrl + Alt
-
-三、	相关网站
-
-
-素材网站
-
-
-兼职网站
-
-
-四、	注意事项
-	工具栏快捷键在英文模式下才可以使用，直接按下相对应字母
-	菜单里面得快捷键是先按下Alt+一级菜单栏后面的字母，再根据对应字母直接按键选择
-
-                                        </div>
-                                        
-                                            <a class="btn btn-text" href="http://jijiehao233.github.io/TDLcqVpEo/">Read More ~</a>
-                            </div>
-                </div>
-            </article>
-            
-                <!-- 翻页 -->
-                
-                </div>
-                <!--  -->
-                <div class="main-container-middle"></div>
-                <!--  -->
-                <div id="sidebar" class="main-container-right">
-
-                    <!-- 个人信息 -->
-                    
-    <div class="id_card i-card">
-        <div class="id_card-avatar" style="background-image: url(http://jijiehao233.github.io/images/avatar.png?v=1615517110365)">
+            </h3>
+            <p class="post-meta">
+              <span class="time">2021-03-01</span>
+              <span>,</span>
+              <span class="post-stats">6 min read</span>
+            </p>
+          </div>
+          
+          <a href="http://jijiehao233.github.io/Uipath/" class="post-feature-image" style="background-image: url('http://jijiehao233.github.io/post-images/Uipath.jfif')">
+          </a>
+          
         </div>
-        <h1 class="id_card-title">
-            集结House
-        </h1>
-        <h2 class="id_card-description">
-            Talents Gathering
-        </h2>
-        <!--  -->
-        <div class="id_card-sns">
-            <!-- github -->
-            
-                <a href="https://github.com/jijiehao233" target="_blank" rel="noopener noreferrer"><i
-                class="fa fa-github"></i></a>
-                
-                    <!-- twitter -->
-                    
-                            <!-- weibo -->
-                            
-                                    <!-- facebook -->
-                                    
-
+        <!-- 第二层：下划线、占位标签、tags -->
+        <div class="post-row-sec-floor">
+          <hr>
+          <div class="clearfix"></div>
+          
+          <a href="http://jijiehao233.github.io/Tech/" class="post-tag">
+            技术
+          </a>
+          
         </div>
+      </div>
+      </>
+      
+      <!-- 每行的总容器 -->
+      <div class="post-row-container">
+        <!-- 第0层；标题 -->
+        <div class="title-floor">
+          <div class="post-title-container">
+            
+            <a href="http://jijiehao233.github.io/TDLcqVpEo/">
+              <h2 class="post-title">
+                PS
+              </h2>
+            </a>
+          </div>
+        </div>
+        <!-- 第一层：包含文章描述、时间信息、封面图 -->
+        <div class="post-row-first-floor">
+          <div class="post-preview">
+            <h3 class="post-subtitle">
+              
+            </h3>
+            <p class="post-meta">
+              <span class="time">2021-02-26</span>
+              <span>,</span>
+              <span class="post-stats">12 min read</span>
+            </p>
+          </div>
+          
+        </div>
+        <!-- 第二层：下划线、占位标签、tags -->
+        <div class="post-row-sec-floor">
+          <hr>
+          <div class="clearfix"></div>
+          
+        </div>
+      </div>
+      </>
+      
+      <!-- 
+       -->
     </div>
+  </div>
+</div>
+  
+  
+<div class="page bg-color">
+  <ul class="pagination-ul">
     
-
-                        <!-- 公告栏 -->
-                        
-    <div class="notice-card i-card ">
-        <div class="notice-title i-card-title">公告</div>
-        <div class="notice-content">
-            接受不了就改变，改变不了就接受
+    
+      
+        <li class="pagination-li pagination-active">
+            <a href="/page/../">
+              1
+            </a>
+        </li>
+      
+    
+    
+  </ul>
+</div>
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <ul class="list-inline text-center">
+            
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+              <!-- <li class="list-inline-item">
+              <a href="http://jijiehao233.github.io/atom.xml" target="_blank">
+                <span class="fa-stack fa-lg">
+                  <i class="fas fa-circle fa-stack-2x"></i>
+                  <i class="fas fa-rss fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+              </li> -->
+          </ul>
+          <p class="copyright text-muted">Copyright &copy;<span>集结House</span><br><a href="https://github.com/getgridea/gridea" class="Themeinfo">Powered by Gridea</a></p>
         </div>
+      </div>
     </div>
-    
-
-                </div>
-            </div>
-
-
-
-            <div class="site-footer">
-  做个理智且清晰的分享者 | 
-  <a class="rss" href="http://jijiehao233.github.io/atom.xml" target="_blank">RSS</a>
+   </footer>
+  <!-- Bootstrap core JavaScript -->
+  <script src="https://cdn.bootcss.com/twitter-bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
+  <!-- <script src="http://jijiehao233.github.io/media/scripts/bootstrap.bundle.min.js"></script> -->
+  <!-- Bootstrap core JavaScript -->
+  <script src="https://cdn.jsdelivr.net/gh/Alanrk/clean-cdn@1.0/scripts/clean-blog.min.js"></script>
+  <!-- <script src="http://jijiehao233.github.io/media/scripts/clean-blog.min.js"></script> -->
+  <script src="//instant.page/3.0.0" type="module" defer integrity="sha384-OeDn4XE77tdHo8pGtE1apMPmAipjoxUQ++eeJa6EtJCfHlvijigWiJpD7VDPWXV1"></script>
+  <style type="text/css">a.back_to_top{text-decoration:none;position:fixed;bottom:40px;right:30px;background:#f0f0f0;height:40px;width:40px;border-radius:50%;line-height:36px;font-size:18px;text-align:center;transition-duration:.5s;transition-propety:background-color;display:none}a.back_to_top span{color:#888}a.back_to_top:hover{cursor:pointer;background:#dfdfdf}a.back_to_top:hover span{color:#555}@media print,screen and(max-width:580px){.back_to_top{display:none!important}}</style>
+<a id="back_to_top" href="#" class="back_to_top">
+  <span>▲</span></a>
+<script>$(document).ready((function(_this) {
+    return function() {
+      var bt;
+      bt = $('#back_to_top');
+      if ($(document).width() > 480) {
+        $(window).scroll(function() {
+          var st;
+          st = $(window).scrollTop();
+          if (st > 30) {
+            return bt.css('display', 'block')
+          } else {
+            return bt.css('display', 'none')
+          }
+        });
+        return bt.click(function() {
+          $('body,html').animate({
+            scrollTop: 0
+          },
+          800);
+          return false
+        })
+      }
+    }
+  })(this));</script>
+  
+    <div id="landlord-parent">
+    <div id="landlord">
+        <div class="message" style="opacity:0"></div>
+        <canvas id="live2d" width="240" height="250" class="live2d"></canvas>
+    </div>
 </div>
 
-<script>
-  hljs.initHighlightingOnLoad()
-</script>
+<script type="text/javascript">
+    if (/(iPhone|iPad|iPod|iOS|Android)/i.test(navigator.userAgent)) {
+        //移动端
+        console.log("------ 移动端");
+    } else {
+        console.log("------ PC端 " + navigator.userAgent);
 
-    </div>
-    <script>
-        $('#sidebar').stickySidebar({
-            topSpacing: 80,
-            // bottomSpacing: 60
+        addScript("https://cdn.jsdelivr.net/gh/850552586/ericamcdn@0.1/js/live2d.js", () => {
+            // 加载完成后再loadlive2d
+            loadlive2d("live2d", "http://jijiehao233.github.io/media/live2d/assets/tororo.model.json");
         });
-    </script>
+
+        var home_Path = "http://jijiehao233.github.io/";
+        addScript("http://jijiehao233.github.io/media/live2d/js/message.js", () => { });
+    }
+
+    // 插入js文件，完成后callback
+    function addScript(jsfile, callback) {
+        var landlord_parent = document.getElementById("landlord-parent");
+        var script = document.createElement("script");
+        script.type = "text/javascript";
+        script.src = jsfile;
+        landlord_parent.appendChild(script);
+        script.onload = script.onreadystatechange = function () {
+            if (!this.readyState || this.readyState === "loaded" || this.readyState === "complete") {
+                script.onload = script.onreadystatechange = null;
+                if (callback && typeof callback == "function") {
+                    callback(); //window[callback]();如果传递字符串过来 调用window['函数名']() 调用方法
+                }
+            }
+        };
+    }
+</script>
+  
 </body>
 
 </html>
