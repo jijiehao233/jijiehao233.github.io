@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>http://jijiehao233.github.io</id>
     <title>集结House</title>
-    <updated>2021-03-12T08:42:52.367Z</updated>
+    <updated>2021-03-18T06:51:30.649Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="http://jijiehao233.github.io"/>
     <link rel="self" href="http://jijiehao233.github.io/atom.xml"/>
@@ -10,6 +10,41 @@
     <logo>http://jijiehao233.github.io/images/avatar.png</logo>
     <icon>http://jijiehao233.github.io/favicon.ico</icon>
     <rights>All rights reserved 2021, 集结House</rights>
+    <entry>
+        <title type="html"><![CDATA[Uipath_经验汇总]]></title>
+        <id>http://jijiehao233.github.io/_J2NJzhsQ/</id>
+        <link href="http://jijiehao233.github.io/_J2NJzhsQ/">
+        </link>
+        <updated>2021-03-17T08:28:35.000Z</updated>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Uipath_常用快捷键]]></title>
+        <id>http://jijiehao233.github.io/BHAgMtdIR/</id>
+        <link href="http://jijiehao233.github.io/BHAgMtdIR/">
+        </link>
+        <updated>2021-03-17T08:21:14.000Z</updated>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Uipath 学习资源]]></title>
+        <id>http://jijiehao233.github.io/eBUHGf3Ej/</id>
+        <link href="http://jijiehao233.github.io/eBUHGf3Ej/">
+        </link>
+        <updated>2021-03-15T02:31:01.000Z</updated>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Uipath 基础备忘录]]></title>
+        <id>http://jijiehao233.github.io/miml-n7oz/</id>
+        <link href="http://jijiehao233.github.io/miml-n7oz/">
+        </link>
+        <updated>2021-03-15T02:28:53.000Z</updated>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[.Net]]></title>
+        <id>http://jijiehao233.github.io/igbNYUC1Q/</id>
+        <link href="http://jijiehao233.github.io/igbNYUC1Q/">
+        </link>
+        <updated>2021-03-15T02:01:05.000Z</updated>
+    </entry>
     <entry>
         <title type="html"><![CDATA[OCR]]></title>
         <id>http://jijiehao233.github.io/FbC4H45Nj/</id>
@@ -33,31 +68,6 @@
         <summary type="html"><![CDATA[<p><em><strong>工具：sql server</strong></em></p>
 ]]></summary>
         <content type="html"><![CDATA[<p><em><strong>工具：sql server</strong></em></p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Uipath_RPA]]></title>
-        <id>http://jijiehao233.github.io/Uipath/</id>
-        <link href="http://jijiehao233.github.io/Uipath/">
-        </link>
-        <updated>2021-03-01T02:10:13.000Z</updated>
-        <summary type="html"><![CDATA[<h1 id="学习资源">学习资源</h1>
-<p><a href="https://academy.uipath.com/learn" title="官方学院"><font color = "DodgerBlue">Uipath Academy</font></a><br>
-<a href="https://www.jianshu.com/c/938e6c0d92ed"><font color = "DodgerBlue">UiPath Studio 中文文档</font></a><br>
-<a href="https://bbs.rpazj.com/forum-36-1.html"><font color = "DodgerBlue">RPA之家</font></a><br>
-<a href="https://blog.everyxin.com/114.x"><font color = "DodgerBlue">全网最详细RPA UIPATH 高级开发人员认证指南</font></a><br>
-<a href="https://www.rpaxuexi.com/tuwen/"><font color = "DodgerBlue">RPA学习</font></a><br>
-<a href="https://home.cnblogs.com/u/toseeme/"><font color = "DodgerBlue">半个读书人</font></a><br>
-<a href="https://blog.csdn.net/chaijw"><font color = "DodgerBlue">柴班说</font></a></p>
-]]></summary>
-        <content type="html"><![CDATA[<h1 id="学习资源">学习资源</h1>
-<p><a href="https://academy.uipath.com/learn" title="官方学院"><font color = "DodgerBlue">Uipath Academy</font></a><br>
-<a href="https://www.jianshu.com/c/938e6c0d92ed"><font color = "DodgerBlue">UiPath Studio 中文文档</font></a><br>
-<a href="https://bbs.rpazj.com/forum-36-1.html"><font color = "DodgerBlue">RPA之家</font></a><br>
-<a href="https://blog.everyxin.com/114.x"><font color = "DodgerBlue">全网最详细RPA UIPATH 高级开发人员认证指南</font></a><br>
-<a href="https://www.rpaxuexi.com/tuwen/"><font color = "DodgerBlue">RPA学习</font></a><br>
-<a href="https://home.cnblogs.com/u/toseeme/"><font color = "DodgerBlue">半个读书人</font></a><br>
-<a href="https://blog.csdn.net/chaijw"><font color = "DodgerBlue">柴班说</font></a></p>
 ]]></content>
     </entry>
     <entry>

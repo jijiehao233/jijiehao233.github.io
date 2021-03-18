@@ -10,14 +10,14 @@
 <meta name="keywords" content="">
 <meta name="description" content="欢迎访问[集结House]的个人博客">
 <meta name="author" content="kveln">
-<title>NLP | 集结House</title>
+<title>Uipath 基础备忘录 | 集结House</title>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.0/dist/css/bootstrap.min.css">
 <link href="https://cdn.bootcss.com/font-awesome/5.11.2/css/all.min.css" rel="stylesheet">
 <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
 <link
   href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800'
   rel='stylesheet' type='text/css'>
-<link rel="alternate" type="application/rss+xml" title="NLP | 集结House » Feed"
+<link rel="alternate" type="application/rss+xml" title="Uipath 基础备忘录 | 集结House » Feed"
   href="http://jijiehao233.github.io/atom.xml">
 <link rel="stylesheet"
   href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.15.10/build/styles/androidstudio.min.css">
@@ -30,8 +30,8 @@
 
 <script>hljs.initHighlightingOnLoad();</script>
 
-  <meta property="og:description" content="NLP" />
-  <meta property="og:url" content="http://jijiehao233.github.io/OPW0_4buL/" />
+  <meta property="og:description" content="Uipath 基础备忘录" />
+  <meta property="og:url" content="http://jijiehao233.github.io/miml-n7oz/" />
   <meta property="og:locale" content="zh-CN" />
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="集结House" />
@@ -152,10 +152,10 @@
               <span class="tags">
                 
               </span>
-              <h1>NLP</h1>
+              <h1>Uipath 基础备忘录</h1>
               <span class="meta">
                 Posted on
-                2021-03-12，1 min read
+                2021-03-15，6 min read
               </span>
             </div>
           
@@ -170,15 +170,135 @@
       <div class="row">
         <div class="col-lg-8 col-md-10 mx-auto post-content-container">
           
-          <p><a href="https://blog.csdn.net/weixin_41510260/article/details/99876405"><font color = "blue">NLP</a></p>
+          <p>Uipath Studio<br>
+1 Properties属性<br>
+1.1 Common 通用<br>
+ContinueOnError<br>
+指定即使活动引发错误，自动化是否仍应继续。该字段仅支持布尔值（True，False），默认值为False。因此，如果该字段为空并且抛出错误，则项目的执行将停止；如果该值设置为True，则无论出现任何错误，项目的执行都将继续；常将其用于某些流程中非任何场景都需执行的Activity。</p>
+<p>DelayAfter<br>
+执行完该Activity后添加一段暂停的时间，以毫秒为单位。</p>
+<p>DelayBefore<br>
+类似DelayAfter，是在执行该activity前添加一段暂停时间。</p>
+<p>DisplayName<br>
+该Activity在这里的显示名称。</p>
+<p>1.2 Input 输入<br>
+ClickType<br>
+指定模拟click事件时使用的鼠标单击类型（单击，双击，向上，向下）。默认情况下，单击已选中。</p>
+<p>MouseButton<br>
+用于单击操作的鼠标按钮（左，右，中）。默认情况下，选择鼠标左键。</p>
+<p>Target</p>
+<p>ClippingRegion<br>
+在以下方向上定义相对于UiElement的剪切矩形（以像素为单位）：left，top，right，bottom。它支持正数和负数。</p>
+<p>Element<br>
+使用另一个活动返回的UiElement变量。此属性不能与Selector属性一起使用。该字段仅支持UiElement变量。</p>
+<p>Selector<br>
+用于在执行活动时查找特定UI元素的Text属性。它实际上是一个XML片段，指定了您要查找的GUI元素及其某些父元素的属性。</p>
+<p>TimeoutMS<br>
+指定在SelectorNotFoundException引发错误之前等待活动运行的时间量（以毫秒为单位）。<br>
+默认值为30000毫秒（30秒）。</p>
+<p>WaitForReady<br>
+在执行操作之前，等待目标准备就绪。可以使用以下选项：</p>
+<p>无 - 在执行操作之前，不等待除目标UI元素之外的任何内容。例如，如果要仅从网页检索文本或单击特定按钮，则可以使用此选项，而无需等待加载所有UI元素。请注意，如果按钮依赖于尚未加载的元素（如脚本），则可能会产生不良后果。</p>
+<p>交互/完成 - 在实际执行操作之前，等待目标应用程序中的所有UI元素存在。<br>
+要评估应用程序是处于交互状态还是完成状态，将验证以下标记：</p>
+<p>桌面应用程序 -一个wm_null消息被发送到检查的存在，，，或标签。如果它们存在，则执行活动。</p>
+<p>Web应用程序：<br>
+a.Internet Explorer - 标记用于检查HTML文档的Ready状态是否设置为Complete。此外，Busy状态必须设置为“False”。<br>
+b.其他 - 标记用于检查HTML文档的Ready状态是否为Complete。</p>
+<p>SAP应用程序 - 首先验证标签的存在，然后使用SAP特定的API来检测会话是否繁忙。</p>
+<p>1.3 Misc 杂项<br>
+Private<br>
+如果选中，则不再以Verbose级别记录变量和参数的值。<br>
+1.4 Options 选项<br>
+CursorPosition</p>
+<p>OffsetX - 根据在“位置”字段（Position）中选择的选项，光标位置的水平位移。</p>
+<p>OffsetY - 根据在“位置”字段中选择的选项，光标位置的垂直位移。</p>
+<p>Position - 描述添加OffsetX和OffsetY属性的偏移的光标起点。可以使用以下选项：TopLeft，TopRight，BottomLeft，BottomRight和Center。默认选项是Center。</p>
+<p>KeyModifiers<br>
+允许您添加键改性剂（配合这些键，click的功能成为特殊功能的click）。可以使用以下选项：Alt，Ctrl，Shift，Win。</p>
+<p>SendWindowMessages<br>
+如果选中，则通过向目标应用程序发送特定消息来执行单击。此输入法可以在后台运行，与大多数桌面应用程序兼容，但它不是最快的方法。<br>
+默认情况下，未选中此复选框。如果此选项和SimulateClick复选框均未选中，则默认方法使用硬件驱动程序模拟单击。<br>
+默认方法是最慢的，它不能在后台运行，但它与所有桌面应用程序兼容。</p>
+<p>SimulateClick</p>
+<p>如果选中，它将使用目标应用程序的技术模拟单击。<br>
+此输入法是三者中最快的，并在后台工作。<br>
+默认情况下，未选中此复选框。<br>
+如果未选中此选项和SendWindowMessages复选框，则默认方法使用硬件驱动程序执行单击。<br>
+默认方法是最慢的，它不能在后台运行，但它与所有桌面应用程序兼容。<br>
+<em><strong>三种鼠标键盘模拟行为对比</strong></em></p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">类型</th>
+<th style="text-align:left">基于</th>
+<th style="text-align:left">兼容程度</th>
+<th style="text-align:left">响应速度</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">Default</td>
+<td style="text-align:left">系统驱动</td>
+<td style="text-align:left">（最接近真实鼠标键盘的方式）</td>
+<td style="text-align:left">全部</td>
+</tr>
+<tr>
+<td style="text-align:left">SendWindowMessages</td>
+<td style="text-align:left">应用</td>
+<td style="text-align:left">大部分</td>
+<td style="text-align:left">中</td>
+</tr>
+<tr>
+<td style="text-align:left">SimulateType(SimulateClick)</td>
+<td style="text-align:left">UI元素</td>
+<td style="text-align:left">一部分</td>
+<td style="text-align:left">快</td>
+</tr>
+</tbody>
+</table>
+<p>情景：在桌面创建了txt，并在uipath中，创建3个Keyborad.TypeInfo活动，分别向这个txt文件输入文字。然后我们启动程序，当这个程序在向这个txt文件输入文字时，我们尝试每次在输入前，把鼠标光标挪开到其他应用程序窗口。对比如下：</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">类型</th>
+<th style="text-align:left">光标</th>
+<th style="text-align:left">文字</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">Default</td>
+<td style="text-align:left">本来在其他应用程序窗口的光标，会移动到txt文本框内。</td>
+<td style="text-align:left">文字是一个个打出的</td>
+</tr>
+<tr>
+<td style="text-align:left">SendWindowMessages</td>
+<td style="text-align:left">在其他应用程序窗口的光标不会被移动</td>
+<td style="text-align:left">文字是一个个打出的</td>
+</tr>
+<tr>
+<td style="text-align:left">SimulateType</td>
+<td style="text-align:left">在其他应用程序窗口的光标不会被移动</td>
+<td style="text-align:left">文字是瞬间出来的</td>
+</tr>
+</tbody>
+</table>
+<p>MouseButton<br>
+可以在这里选择用鼠标的哪一个键执行点击操作。<br>
+Target：即是该activity用来确定需要在哪里做操作的依据，是设计一个UI相关的RPA流程需要非常重视的部分，这一块我们会花更多的时间在之后的分享着重梳理，敬请关注。</p>
+<p>SimulateClick<br>
+非常好用的功能。避免了在运行RPA流程时一些不可预见的弹窗或界面遮挡的干扰，通过后台模拟完成点击操作（同见输入等其它activities）。</p>
+<p>Visible<br>
+参数如果选中，表示使用Microsoft Excel应用程序来读取文件；如果未选中，则操作会在内部进行</p>
 
           <div class="toc-container"></div>
           
           <hr />
           <p class="next-post">下一篇：
-            <a href="http://jijiehao233.github.io/SQL/">
+            <a href="http://jijiehao233.github.io/igbNYUC1Q/">
               <span class="post-title">
-                SQL&rarr;
+                .Net&rarr;
               </span>
             </a>
           </p>
